@@ -18,8 +18,20 @@ Vue.component('timeline', {
     axios.get('/data/events.json')
       .then(response => {
         this.events = response.data;
-      }).catch(() => {
-      console.error('Something went wrong loading the json file.');
+        Core.setup();
+      }).catch((e) => {
+        throw e;
+      });
+  },
+  created() {
+    Broadcast.listen('LoadEvent', (slug) => {
+      this.events.forEach(function (event) {
+        event.items.forEach(function (item) {
+          if (item.title.slugify() === slug) {
+            Broadcast.send('EventViewed', item);
+          }
+        });
+      });
     });
   }
 });

@@ -8,7 +8,7 @@ Vue.component('event', {
       </button>
       <div class="container--left-inner">
           <h1>{{ title }}</h1>
-          <div>{{ description }}</div>
+          <p v-for="line in description">{{ line }}</p>
       </div>
     </section>
 `,
@@ -16,19 +16,33 @@ Vue.component('event', {
     return {
       isActive: false,
       title: '',
-      description: ''
+      description: []
     };
   },
   methods: {
     close() {
       this.isActive = false;
+      Broadcast.send('EventClosed', {
+        title: this.title,
+        description: this.description
+      });
     }
   },
   created() {
+    Broadcast.listen('EventClosed', () => {
+      this.isActive = false;
+      this.title = '';
+      this.description = [];
+
+      History.reset();
+    });
+
     Broadcast.listen('EventViewed', (item) => {
       this.isActive = true;
       this.title = item.title;
       this.description = item.description;
+
+      History.change(this.title);
     });
   }
 });
