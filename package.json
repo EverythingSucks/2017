@@ -1,0 +1,23 @@
+{
+  "name": "2017.sucks",
+  "version": "1.0.0",
+  "author": "Alex Bowers <bowersbros@gmail.com>",
+  "license": "MIT",
+  "homepage": "http://2017.sucks",
+  "scripts": {
+    "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "laravel-mix": "^0.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "moment": "^2.17.1",
+    "vue": "^2.1.8",
+    "vue-moment": "^2.0.2",
+    "vue-router": "^2.1.1"
+  }
+}

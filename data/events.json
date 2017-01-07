@@ -1,0 +1,26 @@
+[
+    {
+        "date": "01-01-2017",
+        "items": [
+            {
+                "title": "Istanbul Nightclub Attack",
+                "description": "39 dead",
+                "sources": [
+                    "http://www.bbc.co.uk/news/world-europe-38481521"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "06-01-2017",
+        "items": [
+            {
+                "title": "Shooting at Fort Lauderdale, Florida",
+                "description": "5 dead, 8 injured",
+                "sources": [
+                    "http://www.bbc.co.uk/news/world-europe-38481521"
+                ]
+            }
+        ]
+    }
+]
