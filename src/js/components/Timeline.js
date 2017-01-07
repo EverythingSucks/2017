@@ -25,13 +25,19 @@ Vue.component('timeline', {
   },
   created() {
     Broadcast.listen('LoadEvent', (slug) => {
+      let found = false;
       this.events.forEach(function (event) {
         event.items.forEach(function (item) {
           if (item.title.slugify() === slug) {
+            found = true;
             Broadcast.send('EventViewed', item);
           }
         });
       });
+
+      if (!found) {
+        History.reset();
+      }
     });
   }
 });

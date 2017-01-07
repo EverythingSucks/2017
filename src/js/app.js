@@ -10,6 +10,11 @@ require('./components/Event');
 
 Vue.use(VueRouter);
 
+if (window.location.protocol == 'http:') {
+  let location = window.location;
+  window.location = `https://${location.host}/${location.hash}`;
+}
+
 new Vue({
   el: '#app'
 });
