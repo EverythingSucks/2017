@@ -1,0 +1,49 @@
+[
+    {
+        "date": "01-01-2017",
+        "items": [
+            {
+                "title": "Istanbul Nightclub Attack",
+                "description": [
+                    "At least 39 people were killed in a nightclub, Reina, in Istanbul, Turkey.",
+                    "A gunman opened fire at around 22:30 GMT as people celebrated the new year.",
+                    "At least 69 people in total were treated in hospital."
+                ],
+                "sources": [
+                    "http://www.bbc.co.uk/news/world-europe-38481521"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "04-01-2017",
+        "items": [
+            {
+                "title": "Man Tortured on Facebook Live",
+                "description": [
+                    "Police in Chicago, USA have arrested four suspects after a Facebook Live Broadcast appeared to show a man bound, gagged and attacked.",
+                    "Several people are shown taunting and assaulting the man while he was sitting in a room, restrained and his mouth taped shut."
+                ],
+                "sources": [
+                    "https://www.theguardian.com/us-news/2017/jan/04/facebook-live-stream-video-man-attacked-chicago-trump"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "06-01-2017",
+        "items": [
+            {
+                "title": "Shooting at Fort Lauderdale, Florida",
+                "description": [
+                    "A gunman has shot and killed five people at a Florida airport.",
+                    "Eight other people were injured in the shooting.",
+                    "The suspect was taken into custody without any further shots being fired."
+                ],
+                "sources": [
+                    "https://www.theguardian.com/us-news/2017/jan/06/fort-lauderdale-airport-shooting-florida"
+                ]
+            }
+        ]
+    }
+]
