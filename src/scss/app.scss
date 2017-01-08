@@ -108,7 +108,8 @@ body {
 .container--left,
 .container--right {
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
