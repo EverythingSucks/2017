@@ -121,6 +121,9 @@ body {
   left: 0;
   transition: width .55s cubic-bezier(.18, 1.25, .67, 1.07);
   z-index: 20;
+  a {
+    color: $rightBg;
+  }
   &:not(.active) {
     @include breakpoint(desktop) {
       width: 10px;

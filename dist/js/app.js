@@ -25126,12 +25126,13 @@ String.prototype.slugify = function () {
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('event', {
-  template: '\n    <section class="container--left" :class="{ active: isActive }">\n      <button class="icon-close" @click="close">\n          <span></span>\n      </button>\n      <div class="container--left-inner">\n          <h1>{{ title }}</h1>\n          <p v-for="line in description">{{ line }}</p>\n      </div>\n    </section>\n',
+  template: '\n    <section class="container--left" :class="{ active: isActive }">\n      <button class="icon-close" @click="close">\n          <span></span>\n      </button>\n      <div class="container--left-inner">\n          <h1>{{ title }}</h1>\n          <p v-for="line in description">{{ line }}</p>\n          <p v-for="source in sources"><a href="{{ source }}">{{ source }}</a></p>\n      </div>\n    </section>\n',
   data: function data() {
     return {
       isActive: false,
       title: '',
-      description: []
+      description: [],
+      sources: []
     };
   },
 
@@ -25140,7 +25141,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('event', {
       this.isActive = false;
       Broadcast.send('EventClosed', {
         title: this.title,
-        description: this.description
+        description: this.description,
+        sources: this.sources
       });
     }
   },
@@ -25151,6 +25153,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('event', {
       _this.isActive = false;
       _this.title = '';
       _this.description = [];
+      _this.sources = [];
 
       History.reset();
     });
@@ -25159,6 +25162,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('event', {
       _this.isActive = true;
       _this.title = item.title;
       _this.description = item.description;
+      _this.sources = item.sources;
 
       History.change(_this.title);
     });

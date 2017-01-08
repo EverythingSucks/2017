@@ -9,6 +9,7 @@ Vue.component('event', {
       <div class="container--left-inner">
           <h1>{{ title }}</h1>
           <p v-for="line in description">{{ line }}</p>
+          <p v-for="source in sources"><a href="{{ source }}">{{ source }}</a></p>
       </div>
     </section>
 `,
@@ -16,7 +17,8 @@ Vue.component('event', {
     return {
       isActive: false,
       title: '',
-      description: []
+      description: [],
+      sources: []
     };
   },
   methods: {
@@ -24,7 +26,8 @@ Vue.component('event', {
       this.isActive = false;
       Broadcast.send('EventClosed', {
         title: this.title,
-        description: this.description
+        description: this.description,
+        sources: this.sources
       });
     }
   },
@@ -33,6 +36,7 @@ Vue.component('event', {
       this.isActive = false;
       this.title = '';
       this.description = [];
+      this.sources = [];
 
       History.reset();
     });
@@ -41,6 +45,7 @@ Vue.component('event', {
       this.isActive = true;
       this.title = item.title;
       this.description = item.description;
+      this.sources = item.sources;
 
       History.change(this.title);
     });
