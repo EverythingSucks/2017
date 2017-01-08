@@ -9,7 +9,7 @@ Vue.component('event', {
       <div class="container--left-inner">
           <h1>{{ title }}</h1>
           <p v-for="line in description">{{ line }}</p>
-          <p v-for="source in sources"><a href="{{ source }}">{{ source }}</a></p>
+          <p v-for="source in sources"><a :href="source">{{ source }}</a></p>
       </div>
     </section>
 `,
