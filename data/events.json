@@ -45,5 +45,21 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "08-01-2017",
+        "items": [
+            {
+                "title": "Truck driven into pedestrians in Jerusalem",
+                "description": [
+                    "Four soldiers have been killed in Jerusalem.",
+                    "15 people in total have been injured.",
+                    "The driver of the truck was immediately shot dead."
+                ],
+                "sources": [
+                    "https://www.theguardian.com/world/2017/jan/08/truck-rammed-into-pedestrians-jerusalem"
+                ]
+            }
+        ]
     }
 ]
