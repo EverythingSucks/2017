@@ -4,10 +4,14 @@ window.History = new class {
   }
 
   change(page) {
+    ga('set', 'page', page.slugify(page));
+    ga('send', 'pageview');
     this.history.replaceState(null, null, '#/' + page.slugify(page));
   }
 
   reset() {
+    ga('send', 'page', '/');
+    ga('send', 'pageview');
     this.history.replaceState(null, null, '#/');
   }
 };
