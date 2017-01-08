@@ -2,6 +2,7 @@ $grey: #16282B;
 $grey_light: #D5D5D5;
 $leftBg: #448891;
 $rightBg: #16282B;
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 @mixin breakpoint($point) {
   @if $point==desktop {
     @media screen and (min-width: 851px) {
@@ -65,7 +66,7 @@ body {
   }
   .logo {
     font-size: 20px;
-    font-family: 'Eczar', serif;
+    font-family: $font-family;
     letter-spacing: .5px;
     transform-origin: 55px 55px;
     &--wrapper {
@@ -195,17 +196,18 @@ body {
       overflow-y: auto;
     }
     h1 {
-      font-family: 'Rubik', sans-serif;
+      font-family: $font-family;
+      font-weight: bold;
       font-size: 42px;
       margin-bottom: 50px;
     }
     p {
-      font-family: 'Roboto', monospace;
+      font-family: $font-family;
       font-size: 18px;
-      line-height: 26px;
+      line-height: 22px;
       color: $grey;
       &:not(:last-child) {
-        margin-bottom: 40px;
+        margin-bottom: 18px;
       }
     }
   }
@@ -285,7 +287,8 @@ body {
     opacity: .8;
     display: block;
     clear: both;
-    font-family: 'Roboto Mono', monospace;
+    font-family: $font-family;
+    font-weight: 100;
     letter-spacing: 1px;
     position: relative;
     &:before {
@@ -313,7 +316,8 @@ body {
     transition: transform .5s ease-out;
     outline: none;
     position: relative;
-    font-family: 'Rubik', sans-serif;
+    font-family: $font-family;
+    font-weight: bold;
     text-align: left;
     letter-spacing: .3px;
     margin-top: 5px;
@@ -372,5 +376,17 @@ body {
   }
   @include breakpoint(mobile) {
     top: 10px; right: 10px; left: auto;
+  }
+}
+
+footer {
+  font-family: $font-family;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  z-index: 1000;
+  a {
+    color: $leftBg;
   }
 }
