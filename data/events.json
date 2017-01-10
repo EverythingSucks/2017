@@ -72,5 +72,21 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "10-01-2017",
+        "items": [
+            {
+                "title": "2 Bombings Near Government Offices in Afghan Capital Kill 38",
+                "description": [
+                    "Two large bombs — one triggered by a suicide attacker — exploded near government offices.",
+                    "The 38 dead included civilians and military personnel, and another 72 people were wounded.",
+                    "Among the wounded was Rahima Jami, a member of parliament from Herat province in western Afghanistan."
+                ],
+                "sources": [
+                    "http://www.nytimes.com/aponline/2017/01/10/world/asia/ap-as-afghanistan.html"
+                ]
+            }
+        ]
     }
 ]
