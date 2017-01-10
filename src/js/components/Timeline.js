@@ -11,17 +11,42 @@ Vue.component('timeline', {
 `,
   data() {
     return {
-      events: []
+      events: [],
+      last_modified: null
+    }
+  },
+  methods: {
+    poll() {
+      axios.head('/data/events.json')
+        .then(response => {
+          let current_modified = new Date(response.headers['last-modified']);
+
+          if(current_modified > this.last_modified) {
+            this.fetchData();
+          }
+        })
+        .catch((e) => {
+          throw e;
+        });
+    },
+
+    fetchData(callback) {
+      callback = callback || function () {};
+
+      axios.get('/data/events.json')
+        .then(response => {
+          this.events = response.data;
+          this.last_modified = new Date(response.headers['last-modified']);
+          callback();
+        }).catch((e) => {
+        throw e;
+      });
     }
   },
   mounted() {
-    axios.get('/data/events.json')
-      .then(response => {
-        this.events = response.data;
-        Core.setup();
-      }).catch((e) => {
-        throw e;
-      });
+    this.fetchData(() => {
+      Core.setup();
+    })
   },
   created() {
     Broadcast.listen('LoadEvent', (slug) => {
@@ -39,5 +64,9 @@ Vue.component('timeline', {
         History.reset();
       }
     });
+
+    setInterval(() => {
+      this.poll();
+    }, 30 * 1000);
   }
 });
