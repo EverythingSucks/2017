@@ -35,7 +35,7 @@ Vue.component('timeline', {
 
       axios.get('/data/events.json')
         .then(response => {
-          this.events = response.data;
+          this.events = response.data.reverse();
           this.last_modified = new Date(response.headers['last-modified']);
           callback();
         }).catch((e) => {
