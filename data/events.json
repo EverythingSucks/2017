@@ -88,5 +88,19 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "16-01-2017",
+        "items": [
+            {
+                "title": "Gene Cernan has died",
+                "description": [
+                    "Gene Cernan, the last man to walk on the moon, has died aged 82."
+                ],
+                "sources": [
+                    "https://www.nasa.gov/astronautprofiles/cernan"
+                ]
+            }
+        ]
     }
 ]
