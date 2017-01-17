@@ -102,5 +102,21 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "17-01-2017",
+        "items": [
+            {
+                "title": "Nigeria Air Strike Hits Refugee Camp, 100 dead",
+                "description": [
+                    "A Nigerian air force jet has mistakenly bombed a camp for disabled people near Rann.",
+                    "The Red Cross has said 6 of its employees have been killed.",
+                    "THe attack took place near where the military is engaged with what it calls the final push against Boko Haram."
+                ],
+                "sources": [
+                    "http://www.bbc.co.uk/news/world-africa-38654991"
+                ]
+            }
+        ]
     }
 ]
