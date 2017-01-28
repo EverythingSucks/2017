@@ -132,5 +132,21 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "25-01-2017",
+        "items": [
+            {
+                "title": "Sir John Hurt has died",
+                "description": [
+                    "Veteran actor John Hurt has died aged 77.",
+                    "Sir John was knighted in 2015 for his services to drama.",
+                    "Known for roles including Ollivander in Harry Potter, The Elephant Man, V for Vendetta, and Alien."
+                ],
+                "sources": [
+                    "http://www.bbc.co.uk/news/uk-38778145"
+                ]
+            }
+        ]
     }
 ]
