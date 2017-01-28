@@ -17,7 +17,7 @@ Vue.component('timeline', {
   },
   methods: {
     poll() {
-      axios.head('/data/events.json')
+      axios.head('/data/events.json?t=' + Math.random().toString(36).substr(2, 5))
         .then(response => {
           let current_modified = new Date(response.headers['last-modified']);
 
@@ -33,7 +33,7 @@ Vue.component('timeline', {
     fetchData(callback) {
       callback = callback || function () {};
 
-      axios.get('/data/events.json')
+      axios.get('/data/events.json?t=' + Math.random().toString(36).substr(2, 5))
         .then(response => {
           this.events = response.data;
           this.last_modified = new Date(response.headers['last-modified']);
