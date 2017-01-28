@@ -148,5 +148,36 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "26-01-2017",
+        "items": [
+            {
+                "title": "President Trump signs executive order to start the Mexican Border Wall",
+                "description": [
+                    "President Donald Trump has signed an executive order at the Department of Homeland Security in Washington DC."
+                ],
+                "sources": [
+                    "https://www.theguardian.com/us-news/2017/jan/25/donald-trump-sign-mexico-border-executive-order"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "27-01-2017",
+        "items": [
+            {
+                "title": "President Trump signs executive order banning refugees",
+                "description": [
+                    "President Donald Trump signs 'extreme vetting' executive order for people entering the US",
+                    "The executive order will deny refugees and immigrants from certain Muslim-majority countries entry to the United States.",
+                    "This ban includes green-card holders.",
+                    "The restrictions were announced on Holocaust Memorial Day."
+                ],
+                "sources": [
+                    "https://www.theguardian.com/us-news/2017/jan/27/donald-trump-muslim-refugee-ban-executive-action"
+                ]
+            }
+        ]
     }
 ]
