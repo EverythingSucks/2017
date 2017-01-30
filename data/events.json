@@ -179,5 +179,22 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "28-01-2017",
+        "items": [
+            {
+                "title": "Six dead and eight wounded in a shooting in Quebec City, Canada",
+                "description": [
+                    "Six people have been killed and another eight have been wounded in a shooting at a mosque in Quebec City, Canada.",
+                    "One suspect was arrested at the scene, and another was arrested nearby. There are no other suspects",
+                    "Canadian authorities are treating the shooting as a terror attack.",
+                    "50 people had gathered for evening prayers when the attack happened."
+                ],
+                "sources": [
+                    "http://www.bbc.co.uk/news/world-us-canada-38793071"
+                ]
+            }
+        ]
     }
 ]
