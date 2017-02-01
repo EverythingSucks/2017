@@ -196,5 +196,21 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "08-01-2017",
+        "items": [
+            {
+                "title": "Car bomb explosion in Baghdad, Iraq",
+                "description": [
+                    "11 people have been killed and dozens more injured.",
+                    "The bomb was set off in a vegetable market.",
+                    "The Islamic State (IS) has claimed responsibility behind the blast."
+                ],
+                "sources": [
+                    "http://www.bbc.com/news/world-middle-east-38546497"
+                ]
+            }
+        ]
     }
 ]
