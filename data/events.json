@@ -196,5 +196,25 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "01-10-2017",
+        "items": [
+            {
+                "title": "58 dead and 515 injured in Route 91 Harvest music festival in Las Vegas, Nevada, United States",
+                "description": [
+                    "58 people have been killed and 515 injured when 64 year old Stephen paddock fired on the crowd at Route 91 Harvest music festival.",
+                    "The attack took place from 2 windows on his 32nd floor suite at the Mandalay Bay resort and Casino on the Las Vegas Strip.",
+                    "The perpetrator was 64 year old Stephen Paddock, whose motive is unknown.",
+                    "He was found dead in his suite with a self inflicted gunshot wound.",
+                    "The massacre is the deadliest mass shooting by a lone shooter in U.S. history."
+                ],
+                "sources": [
+                    "https://www.lvmpd.com/en-us/Press%20Releases/PO%20235%2010-02-17.pdf",
+                    "https://www.lvmpd.com/en-us/Press%20Releases/PO%20236%2010-02-17.pdf",
+                    "http://www.bbc.co.uk/news/world-us-canada-41471242"
+                ]
+            }
+        ]
     }
 ]
